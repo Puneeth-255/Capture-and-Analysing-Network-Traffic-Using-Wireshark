@@ -1,0 +1,43 @@
+task : : Capture and Analyze Network Traffic Using Wireshark
+
+Objective: Capture live network packets and identify basic protocols and traffic types.
+Tools: Wireshark 
+
+ Capture and Analyze Network Traffic is a process used to monitor, inspect, and understand the data flowing across a computer network. It's essential for troubleshooting, performance optimization, and security analysis.
+
+- Capture: This involves intercepting packets (units of data) as they travel across the network. Tools like Wireshark or tcpdump are commonly used to do this.
+- Analyze: Once captured, the packets are examined to understand their contents, source, destination, protocol, and behavior.
+
+steps involved :-
+
+### Step 1: Install Wireshark and Set Up Capture
+- **Download and install Wireshark** from the official website.
+- Choose the correct network interface to monitor (e.g., Ethernet, Wi-Fi).
+- Enable promiscuous mode to capture all packets on the network.
+---
+
+###  Step 2: Start Capturing Packets
+- Click the shark fin icon to begin capturing.
+- Observe live traffic flowing through the interface.
+- Stop the capture once you've collected enough data.
+
+---
+
+###  Step 3: Analyze the Captured Traffic
+- Use display filters to isolate specific protocols (e.g., `http`, `tcp.port == 443`).
+- Follow TCP streams to view entire conversations.
+- Look for anomalies like retransmissions, duplicate ACKs, or out-of-order packets.
+
+---
+
+### Step 4: Apply Filters and Visual Tools
+- Use filters like `ip.addr == 192.168.1---` or `tcp.flags.syn == 1` to narrow down results.
+- Color coding helps highlight different types of traffic.
+- Use statistics tools to view protocol hierarchies and byte counts.
+---
+
+###  Step 5: Practice and Experiment
+- Try capturing traffic from specific websites or applications.
+- Simulate network issues (e.g., ping tests, dropped packets) to see how they appear in Wireshark.
+
+This are the steps to download wireshark
